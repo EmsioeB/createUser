@@ -20,7 +20,7 @@ ${PASSWORD}  010101
     Input Text    xpath=//input[@id='password']    ${PASSWORD}
 
     Click Button    xpath=//input[@id='kc-login']
-    Sleep    5s
+    Sleep    2s
 Click vào cài đặt
     # B1: Click vào icon "Cài đặt"
     Click Element    xpath=//a[.//div[text()='Cài đặt']]
@@ -43,16 +43,34 @@ Click vào cài đặt
     Input Text    xpath=//input[@id='name_0']    Bùi Giang Linh
     Input Text    xpath=//input[@id='login_0']    0969835042
     Sleep         2s
-
+    #Click sang tab Tuỳ chọn khác
     Click Element    xpath=//a[@name='preferences']
     Sleep    2s
 
     Click element    xpath=//input[@id='branch_ids_0']
-#    Log to console    Thành công
     Input Text     xpath=//input[@id='branch_ids_0']    Chi nhánh Hà Nội 1
-    Sleep    2s
+    Sleep    1s
     Click Element    xpath=//ul[contains(@class, 'ui-autocomplete')]//a[normalize-space(.)='Chi nhánh Hà Nội 1']
     Sleep    1s
+
+    Click Element    xpath=//input[@id='branch_id_0']
+    Input Text    xpath=//input[@id='branch_id_0']    Chi nhánh Hà Nội 1
+    Sleep    1s
+    Click Element    xpath=//ul[contains(@class, 'ui-autocomplete')]//a[normalize-space(.)='Chi nhánh Hà Nội 1']
+    Sleep    1s
+
+    #Click sang tab OAuth
+    Click Element    xpath=//a[@name='oauth']
+    Sleep    2s
+    Click Element    xpath=//input[@id='oauth_provider_id_0']
+#    Input Text    xpath=//input[@id='oauth_provider_id_0']    KEYCLOAK
+    Sleep    1s
+    Click Element    xpath=//a[@role='option' and text()='KEYCLOAK']
+    Sleep   2s
+
+
+    Click Element    xpath=//button[@aria-label='Save manually']
+    Sleep    5s
 
 
 

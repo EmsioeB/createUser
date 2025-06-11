@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="createUser" type="RobotFramework" factoryName="RobotFramework" singleton="false">
+    <option name="target" value="D:\Code\Python\createUser" />
+    <option name="args">
+      <list />
+    </option>
+    <option name="env">
+      <map />
+    </option>
+    <option name="workingDir" />
+    <option name="makeSuite" value="true" />
+    <method v="2" />
+  </configuration>
+</component>
