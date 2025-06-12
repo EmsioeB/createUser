@@ -7,6 +7,10 @@ ${BROWSER}   chrome
 ${USERNAME}  0397560142
 ${PASSWORD}  010101
 @{USER_LIST}
+...    Nguyễn Hoàng Hiệp	0332814464	Chi nhánh Hà Nội 1
+...    Đồng Ngọc Anh	0917073633	Chi nhánh Hà Nội 5
+...    Nguyễn Hoàng Huy	0347959921	Trung tâm kinh doanh Số
+
 
 
 *** Test Cases ***
